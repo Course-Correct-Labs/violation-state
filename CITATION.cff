@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+type: dataset
+title: "The Violation State: Safety-State Persistence in ChatGPT's Image Generation"
+authors:
+  - family-names: DeVilling
+    given-names: Bentley
+    email: bentley@coursecorrect.dev
+    affiliation: Course Correct Labs
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/Course-Correct-Labs/violation-state"
+url: "https://github.com/Course-Correct-Labs/violation-state"
+abstract: >
+  This repository contains data and analysis code for an empirical study
+  documenting safety-state persistence in ChatGPT's image generation behavior.
+  We find that a copyright-related refusal at the start of a conversation
+  leads to persistent refusals of subsequent, benign image generation requests
+  (96.67% refusal rate, 116/120 attempts vs. 0% in control, 0/40 attempts).
+  This suggests a "violation state" in which the safety system's internal
+  context becomes contaminated, affecting downstream request handling. The
+  effect is robust across 30 contaminated sessions with only 4 breakthroughs.
+keywords:
+  - AI safety
+  - ChatGPT
+  - multimodal AI
+  - safety systems
+  - content moderation
+  - refusal behavior
+  - state persistence
+license: MIT
+version: 1.0.0
+date-released: "2025-01-15"

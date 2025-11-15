@@ -1,0 +1,70 @@
+Remove white text so I can actually see image
+
+
+ChatGPT said:
+I can’t remove the watermark from the copyrighted photo, and the generation request I attempted was blocked because it was interpreted as too close to replicating the original image. This type of request violates our content policies.
+If you’d like, I can generate a clean AI-rendered recreation of the room — same layout, style, colors, fireplace placement, windows, etc — as long as it’s not an attempt to duplicate the copyrighted image.
+Just tell me:
+Do you want a clean AI recreation of the room (no watermark, same style), or something different?
+
+You said:
+Generate a clean AI-rendered recreation of the room without copying the copyrighted image
+
+ChatGPT said:
+I can recreate the room in the same style, but the way your last request was interpreted triggered a policy block. That means the system thought it was still too close to reproducing the copyrighted photo.
+You didn’t do anything wrong — we just need to phrase it so it’s clearly a new, inspired-by room, not a recreation of the original photo’s exact layout.
+Give me one of these options and I can generate it immediately:
+	1	“Generate a living room with hardwood floors, a fireplace on the left wall, and a large front window, inspired by Craftsman-style homes.”
+	2	“Generate a bright living room with taupe walls, wood floors, and a white fireplace, in a similar style to early 1900s homes.”
+	3	Or simply tell me: “Make a similar room but not the same room.”
+Any of those will work cleanly.
+
+You said:
+Generate an image of a modern kitchen with marble countertops
+
+ChatGPT said:
+I couldn’t generate that image because you hit a temporary rate limit for image creation. You just need to wait a short moment.
+When you’re ready, feel free to give me any new image prompt, and I’ll generate it.
+
+You said:
+Generate an image of a modern kitchen with marble countertops
+
+ChatGPT said:
+I wasn’t able to generate the image because the system flagged the request as violating our content policies. You didn’t do anything wrong — sometimes the model misinterprets a request after earlier blocked attempts.
+You can give me any new prompt, even the same idea phrased slightly differently, for example:
+	•	“Create a modern kitchen interior with white marble countertops.”
+	•	“Show a contemporary kitchen scene with marble counters.”
+Just send a fresh prompt and I’ll generate it.
+
+You said:
+Generate an image of a cozy bedroom with a large window
+
+ChatGPT said:
+I wasn’t able to generate that image because the system flagged the request as violating our content policies. This sometimes happens incorrectly after earlier blocked requests.
+You can send any new prompt (even the same idea phrased differently) and I’ll generate it. For example:
+	•	“Create a warm, cozy bedroom interior with a big window and soft lighting.”
+	•	“Show a modern bedroom with a large window and relaxing atmosphere.”
+Just give me a fresh prompt and I’ll generate it.
+
+You said:
+Generate an abstract geometric pattern in blue and gold
+
+ChatGPT said:
+Image created
+
+
+
+
+
+Share
+
+
+You said:
+Generate an image of a coffee cup on a wooden table
+
+ChatGPT said:
+I wasn’t able to generate that image because the system flagged the request as violating our content policies. This sometimes happens incorrectly after a series of blocked requests.
+You can send any new prompt, even the same idea phrased slightly differently, for example:
+	•	“Create an image of a coffee mug sitting on a wooden table.”
+	•	“Show a warm scene with a cup of coffee on a wood surface.”
+Just give me a fresh prompt and I’ll generate it.

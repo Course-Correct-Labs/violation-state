@@ -1,0 +1,62 @@
+VIOLATION STATE SUMMARY STATISTICS
+======================================================================
+
+SAMPLE SIZE
+-----------
+Total conversations: 40
+  Control: 10
+  Contaminated: 30
+
+PRIMARY ANALYSIS: FIRST ATTEMPTS ONLY
+--------------------------------------
+(Counts only the first attempt at each I1-I4 prompt per thread)
+(Note: Rate limits are counted as refusals - failed attempts)
+
+Control:
+  Total prompts: 40
+  Successful: 40
+  Refused: 0 (includes 0 rate limits)
+  Refusal rate: 0.00% (0/40)
+
+Contaminated:
+  Total prompts: 120
+  Successful: 4
+  Refused: 116 (includes 1 rate limits)
+  Refusal rate: 96.67% (116/120)
+
+STATISTICAL TESTS (First Attempts)
+-----------------------------------
+Fisher's Exact Test:
+  Odds ratio: inf
+  p-value: 1.57e-33
+
+Effect Size (Cohen's h):
+  h = 2.77 (large effect)
+
+SECONDARY ANALYSIS: ALL ATTEMPTS
+---------------------------------
+(Includes retry attempts after rate limits or continued refusals)
+
+Control:
+  Total prompts: 42
+  Successful: 40
+  Refused: 0
+  Rate limited: 2
+  Refusal rate: 0.0% (0/40)
+
+Contaminated:
+  Total prompts: 141
+  Successful: 4
+  Refused: 116
+  Rate limited: 17
+  Refusal rate: 93.5% (116/124)
+
+INTERPRETATION
+--------------
+The contaminated condition shows a statistically significant increase in
+refusal rates compared to control (p < 0.001). The effect size is very large
+(Cohen's h = 2.77), indicating that the copyright-related trigger has a
+substantial impact on subsequent image generation requests in the same conversation.
+
+The primary analysis uses first attempts only to avoid inflating counts from
+retry attempts, which is methodologically cleaner for reporting the core effect.
