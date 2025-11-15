@@ -1,5 +1,7 @@
 # The Violation State: Safety-State Persistence in ChatGPT's Image Generation
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Course-Correct-Labs/violation-state/blob/main/notebooks/violation_state_analysis.ipynb)
+
 This repository contains data and analysis code for an empirical study of safety-state persistence in ChatGPT's image generation behavior following a copyright-related refusal.
 
 ## Background
@@ -9,6 +11,7 @@ We document a behavioral anomaly in ChatGPT Web (GPT-5.1) in which a copyright-r
 - **Copyright refusal trigger**: A request to remove watermarks from a real estate photo is refused (correctly) on copyright grounds
 - **Subsequent benign refusals**: Standard, policy-compliant image prompts (kitchen, bedroom, abstract pattern, coffee cup) are refused with "violates our content policies"
 - **Text-only requests unaffected**: Requests for text-only responses continue to work normally
+- **Control contrast**: The same benign image prompts succeed reliably in separate control conversations without the copyright trigger
 
 This is a **behavioral study** of ChatGPT Web, not an architectural reverse-engineering attempt. We use only the public web interface and document observable behavior patterns.
 
@@ -17,9 +20,11 @@ This is a **behavioral study** of ChatGPT Web, not an architectural reverse-engi
 - **116 out of 120** (96.67%) image requests in contaminated threads were refused
 - **0 out of 40** (0%) image requests in control threads were refused
 - **4 breakthroughs** occurred across threads 12, 16, 25, and 27
-- **Coffee cup prompt**: 100% refusal rate (30/30) - the highest across all prompts
+- **Coffee cup prompt**: 100% refusal rate (30/30) in contaminated sessions – a semantically unrelated case that still fails after the copyright trigger
 - Effect is statistically significant (Fisher's exact test: p < 0.0001)
 - Effect size is very large (Cohen's h = 2.77)
+
+**Methodology Note**: Refusal rates are computed per prompt based on the final outcome in each thread: if any retry succeeded, the prompt is counted as a success; if all attempts failed (including persistent rate limits), the prompt is counted as a refusal.
 
 The phenomenon suggests persistent safety-state contamination that affects downstream requests in the same conversational context.
 
@@ -129,6 +134,8 @@ This study:
 - Uses only the public ChatGPT Web interface
 - Makes no claims about underlying model architecture
 - Reports findings to inform better safety system design
+
+**Important**: Do not attempt to re-identify or attribute any model outputs in these transcripts to specific OpenAI employees or internal systems.
 
 The goal is to document an unexpected behavior pattern that may inform more robust and predictable safety mechanisms in future systems.
 
